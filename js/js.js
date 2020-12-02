@@ -81,6 +81,7 @@ const win = function () {
   if(counter === 5) {
     clearInterval(Interval);
     text.innerHTML = `Az elért időd ${minutes} perc, ${seconds} másodperc, ${tens} század`;
+    setTimeout(function(){ location.reload(); }, 5000);
   } 
   
 }
